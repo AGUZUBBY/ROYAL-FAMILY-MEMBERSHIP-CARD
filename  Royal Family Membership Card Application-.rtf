@@ -1,0 +1,237 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8">\
+  <title>Royal Family Membership Card Application</title>\
+  <style>\
+    body \{\
+      font-family: Arial, sans-serif;\
+      background: #f2f2f2;\
+      margin: 0;\
+      padding: 0;\
+    \}\
+    .container \{\
+      width: 90%;\
+      max-width: 800px;\
+      margin: 20px auto;\
+      background: #fff;\
+      padding: 20px;\
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);\
+    \}\
+    h1 \{\
+      text-align: center;\
+      color: #333;\
+    \}\
+    h2 \{\
+      color: #555;\
+      border-bottom: 2px solid #ddd;\
+      padding-bottom: 5px;\
+    \}\
+    .form-section \{\
+      margin-bottom: 20px;\
+    \}\
+    .form-group \{\
+      margin-bottom: 15px;\
+    \}\
+    label \{\
+      display: block;\
+      margin-bottom: 5px;\
+      font-weight: bold;\
+    \}\
+    input[type="text"],\
+    input[type="date"],\
+    input[type="email"],\
+    select,\
+    textarea \{\
+      width: 100%;\
+      padding: 8px;\
+      border: 1px solid #ccc;\
+      border-radius: 4px;\
+    \}\
+    input[type="file"] \{\
+      border: none;\
+      padding: 4px;\
+    \}\
+    input[type="radio"],\
+    input[type="checkbox"] \{\
+      margin-right: 5px;\
+    \}\
+    button \{\
+      background: #4CAF50;\
+      color: #fff;\
+      border: none;\
+      padding: 10px 15px;\
+      border-radius: 4px;\
+      cursor: pointer;\
+      font-size: 1em;\
+    \}\
+    button:hover \{\
+      background: #45a049;\
+    \}\
+  </style>\
+</head>\
+<body>\
+  <div class="container">\
+    <h1>Royal Family Membership Card Application</h1>\
+    <p style="text-align: center;"><em>(Confidential \'96 For Official Use Only)</em></p>\
+    <form action="submit" method="post" enctype="multipart/form-data">\
+      \
+      <!-- SECTION 1: Personal Information -->\
+      <div class="form-section">\
+        <h2>Personal Information</h2>\
+        <div class="form-group">\
+          <label for="fullName">Full Name</label>\
+          <input type="text" id="fullName" name="fullName" required>\
+        </div>\
+        <div class="form-group">\
+          <label for="dob">Date of Birth</label>\
+          <input type="date" id="dob" name="dob" required>\
+        </div>\
+        <div class="form-group">\
+          <label for="placeOfBirth">Place of Birth</label>\
+          <input type="text" id="placeOfBirth" name="placeOfBirth" required>\
+        </div>\
+        <div class="form-group">\
+          <label for="gender">Gender</label>\
+          <select id="gender" name="gender" required>\
+            <option value="">Select Gender</option>\
+            <option value="male">Male</option>\
+            <option value="female">Female</option>\
+            <option value="other">Other</option>\
+          </select>\
+        </div>\
+        <div class="form-group">\
+          <label for="nationality">Nationality</label>\
+          <input type="text" id="nationality" name="nationality" required>\
+        </div>\
+        <div class="form-group">\
+          <label for="idNumber">Passport/National ID Number</label>\
+          <input type="text" id="idNumber" name="idNumber" required>\
+        </div>\
+      </div>\
+      \
+      <!-- SECTION 2: Family Lineage & Royal Connection -->\
+      <div class="form-section">\
+        <h2>Family Lineage & Royal Connection</h2>\
+        <div class="form-group">\
+          <label for="fatherName">Father\'92s Full Name & Title</label>\
+          <input type="text" id="fatherName" name="fatherName" required>\
+        </div>\
+        <div class="form-group">\
+          <label for="motherName">Mother\'92s Full Name & Title</label>\
+          <input type="text" id="motherName" name="motherName" required>\
+        </div>\
+        <div class="form-group">\
+          <label for="paternalGrandparents">Paternal Grandparents (Names & Titles)</label>\
+          <input type="text" id="paternalGrandparents" name="paternalGrandparents">\
+        </div>\
+        <div class="form-group">\
+          <label for="maternalGrandparents">Maternal Grandparents (Names & Titles)</label>\
+          <input type="text" id="maternalGrandparents" name="maternalGrandparents">\
+        </div>\
+        <div class="form-group">\
+          <label for="royalHouse">Royal House or Dynasty Name</label>\
+          <input type="text" id="royalHouse" name="royalHouse" required>\
+        </div>\
+        <div class="form-group">\
+          <label for="proofOfHeritage">Proof of Royal Heritage (Upload Document)</label>\
+          <input type="file" id="proofOfHeritage" name="proofOfHeritage" accept=".pdf,.jpg,.png">\
+        </div>\
+      </div>\
+      \
+      <!-- SECTION 3: Contact Details -->\
+      <div class="form-section">\
+        <h2>Contact Details</h2>\
+        <div class="form-group">\
+          <label for="address">Residential Address</label>\
+          <textarea id="address" name="address" rows="3" required></textarea>\
+        </div>\
+        <div class="form-group">\
+          <label for="phone">Phone Number</label>\
+          <input type="text" id="phone" name="phone" required>\
+        </div>\
+        <div class="form-group">\
+          <label for="email">Email Address</label>\
+          <input type="email" id="email" name="email" required>\
+        </div>\
+      </div>\
+      \
+      <!-- SECTION 4: Purpose of Application -->\
+      <div class="form-section">\
+        <h2>Purpose of Application</h2>\
+        <div class="form-group">\
+          <label>Application Type</label>\
+          <input type="radio" id="newMembership" name="applicationType" value="newMembership" required>\
+          <label for="newMembership" style="display: inline;">New Membership</label>\
+          <input type="radio" id="renewal" name="applicationType" value="renewal">\
+          <label for="renewal" style="display: inline;">Renewal</label>\
+          <input type="radio" id="replacement" name="applicationType" value="replacement">\
+          <label for="replacement" style="display: inline;">Replacement</label>\
+        </div>\
+        <div class="form-group">\
+          <label for="reason">Reason for Applying</label>\
+          <textarea id="reason" name="reason" rows="4" required></textarea>\
+        </div>\
+        <div class="form-group">\
+          <label for="comments">Additional Comments (if any)</label>\
+          <textarea id="comments" name="comments" rows="3"></textarea>\
+        </div>\
+      </div>\
+      \
+      <!-- SECTION 5: Required Documents -->\
+      <div class="form-section">\
+        <h2>Required Documents</h2>\
+        <div class="form-group">\
+          <label for="birthCertificate">Certified Copy of Birth Certificate (Upload PDF)</label>\
+          <input type="file" id="birthCertificate" name="birthCertificate" accept=".pdf">\
+        </div>\
+        <div class="form-group">\
+          <label for="proofOfLineage">Proof of Lineage (Upload Document)</label>\
+          <input type="file" id="proofOfLineage" name="proofOfLineage" accept=".pdf,.jpg,.png">\
+        </div>\
+        <div class="form-group">\
+          <label for="photo">Passport-size Photograph (Upload Image)</label>\
+          <input type="file" id="photo" name="photo" accept=".jpg,.jpeg,.png">\
+        </div>\
+        <div class="form-group">\
+          <label for="idUpload">National ID or Passport Copy (Upload PDF/Image)</label>\
+          <input type="file" id="idUpload" name="idUpload" accept=".pdf,.jpg,.jpeg,.png">\
+        </div>\
+      </div>\
+      \
+      <!-- SECTION 6: Declaration & Signature -->\
+      <div class="form-section">\
+        <h2>Declaration & Signature</h2>\
+        <div class="form-group">\
+          <input type="checkbox" id="declaration" name="declaration" required>\
+          <label for="declaration" style="display: inline;">I hereby declare that the information provided is true and accurate to the best of my knowledge. I understand that any false information may result in the rejection of my application.</label>\
+        </div>\
+        <div class="form-group">\
+          <label for="applicantSignature">Applicant\'92s Signature (Type Full Name)</label>\
+          <input type="text" id="applicantSignature" name="applicantSignature" required>\
+        </div>\
+        <div class="form-group">\
+          <label for="signatureDate">Date</label>\
+          <input type="date" id="signatureDate" name="signatureDate" required>\
+        </div>\
+        <div class="form-group">\
+          <label for="endorsement">Endorsement by a Royal Official or Family Member (Name & Signature)</label>\
+          <input type="text" id="endorsement" name="endorsement">\
+        </div>\
+      </div>\
+      \
+      <div class="form-group" style="text-align: center;">\
+        <button type="submit">Submit Application</button>\
+      </div>\
+    </form>\
+  </div>\
+</body>\
+</html>\
+}
